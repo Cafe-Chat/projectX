@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frontPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectx.ProjectxController">
+   <children>
+      <ImageView fitHeight="86.0" fitWidth="98.0" layoutX="671.0" layoutY="429.0" onMouseClicked="#onClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+         <image>
+            <Image url="@../Images/Add.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="80.0" prefWidth="808.0" style="-fx-background-color: #242f41;">
+         <children>
+            <Label layoutX="322.0" layoutY="17.0" text="Cafe Chat" textFill="WHITE">
+               <font>
+                  <Font name="Poor Richard" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="91.0" prefHeight="47.0" prefWidth="264.0" text="Recent Contacts" textFill="#220101">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Circle fill="#bc5b53" layoutX="79.0" layoutY="203.0" radius="49.0" stroke="#003300" strokeType="INSIDE" />
+      <Circle fill="#bdc63d" layoutX="206.0" layoutY="203.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#668fd0" layoutX="334.0" layoutY="203.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#bc2286" layoutX="459.0" layoutY="203.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#360e0e" layoutX="587.0" layoutY="203.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#e80e0e" layoutX="708.0" layoutY="203.0" radius="49.0" stroke="#c60f0f" strokeType="INSIDE" />
+      <Label layoutX="14.0" layoutY="275.0" prefHeight="47.0" prefWidth="264.0" text="Features" textFill="#220101">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="346.0" prefHeight="47.0" prefWidth="264.0" text="Chat" textFill="#220101">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="406.0" prefHeight="47.0" prefWidth="264.0" text="Audio Call" textFill="#220101">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="346.0" prefHeight="47.0" prefWidth="264.0" text="File Transfer" textFill="#220101">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="406.0" prefHeight="47.0" prefWidth="264.0" text="Video Call" textFill="#220101">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

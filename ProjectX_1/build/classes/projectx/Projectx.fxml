@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LandingPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectx.ProjectxController">
+   <children>
+      <Pane prefHeight="560.0" prefWidth="400.0" style="-fx-background-color: #20b2aa;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/log.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="400.0" prefHeight="560.0" prefWidth="410.0" style="-fx-background-color: #242f41;">
+         <children>
+            <JFXPasswordField fx:id="passField" focusColor="WHITE" layoutX="92.0" layoutY="263.0" prefHeight="25.0" prefWidth="217.0" promptText="Admin Password" style="-fx-text-fill: #ffffff;" unFocusColor="WHITE" />
+            <JFXCheckBox fx:id="checkBox" checkedColor="#25c9be" layoutX="85.0" layoutY="304.0" style="-fx-cursor: HAND;" text="I Agree Terms of Use" textFill="WHITE" unCheckedColor="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="154.0" layoutY="338.0" onAction="#onLoad" prefHeight="27.0" prefWidth="93.0" ripplerFill="LIGHTSEAGREEN" style="-fx-border-color: #ffffff; -fx-cursor: hand;" text="Log In" textFill="WHITE" />
+            <ImageView fitHeight="74.0" fitWidth="68.0" layoutX="164.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/logoUser.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="validation" layoutX="146.0" layoutY="430.0" textFill="#dd0707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="agreeLabel" layoutX="106.0" layoutY="430.0" textFill="#dd0707">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
