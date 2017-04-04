@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="frontPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectx.frontPageController">
+   <children>
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="421.0" layoutY="227.0" onMouseClicked="#onClick" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+         <image>
+            <Image url="@../Images/Add.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="80.0" prefWidth="808.0" style="-fx-background-color: #242f41;">
+         <children>
+            <Label layoutX="322.0" layoutY="17.0" text="Cafe Chat" textFill="WHITE">
+               <font>
+                  <Font name="Poor Richard" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="713.0" layoutY="27.0" onMouseClicked="#onLogOut" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+               <image>
+                  <Image url="@../Images/logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="37.0" layoutY="308.0" prefHeight="47.0" prefWidth="289.0" text="Connected Friends" textFill="#220101">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Circle fill="#bc5b53" layoutX="90.0" layoutY="441.0" radius="49.0" stroke="#003300" strokeType="INSIDE" />
+      <Circle fill="#bdc63d" layoutX="217.0" layoutY="441.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#668fd0" layoutX="345.0" layoutY="441.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#bc2286" layoutX="470.0" layoutY="441.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#360e0e" layoutX="598.0" layoutY="441.0" radius="49.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="#e80e0e" layoutX="719.0" layoutY="441.0" radius="49.0" stroke="#c60f0f" strokeType="INSIDE" />
+      <Label layoutX="37.0" layoutY="90.0" prefHeight="47.0" prefWidth="111.0" text="My Ip ">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="90.0" prefHeight="47.0" prefWidth="166.0" text="My Name">
+         <font>
+            <Font name="Poor Richard" size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="ipField" focusColor="BLACK" labelFloat="true" layoutX="34.0" layoutY="231.0" onKeyPressed="#onEnter" promptText="Connect to Your New Friend">
+         <font>
+            <Font name="Poor Richard" size="31.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="myIp" layoutX="34.0" layoutY="143.0" prefHeight="47.0" prefWidth="289.0" text=". . ." textFill="#0db5e4">
+         <font>
+            <Font name="Microsoft Himalaya" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="myName" layoutX="492.0" layoutY="145.0" prefHeight="47.0" prefWidth="271.0" text=". . ." textFill="#0db5e4">
+         <font>
+            <Font name="Poor Richard" size="33.0" />
+         </font>
+      </Label>
+      <JFXSpinner fx:id="spinner" layoutX="368.0" layoutY="237.0" visible="false" />
+      <Label fx:id="validText" layoutX="283.0" layoutY="279.0" prefHeight="27.0" prefWidth="111.0" text="Enter Valid Ip" textFill="RED" visible="false">
+         <font>
+            <Font name="Poor Richard" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
